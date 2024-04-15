@@ -46,12 +46,83 @@
         max-width: 100%;
         height: auto;
     }
+    nav ul {
+    list-style-type: none;
+    text-align: right; 
+	padding-right:100px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
 </style>
 </head>
 <body>
 
 <header>
     <h1>Evolution and Impact of Mobile Development in the IT Field</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="AI-page.html">Artificial Intelligence</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="mobile_dev.html">Mobile Development</a></li>
+                    <li><a href="CloudComputing.html">Cloud Computing</a></li>
+                    <li><a href="Network.html">Networking</a></li>
+                    <li><a href="#">Cyber Security</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <div class="container">
