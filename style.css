@@ -1,29 +1,32 @@
-/* Basic reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	
 }
 
 
-/* Basic styling */
 header {
     background-color: #333;
-    padding-right:100px;
+    padding: 10px 0;
+    text-align: center;
+	color:white;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: right; /* Aligning the text to the right */
+    text-align: right; 
+	padding-right:100px;
 }
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px; /* Add space between menu items */
+    margin-left: 20px; 
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Remove margin for the first menu item */
+    margin-left: 0; 
 }
 
 nav ul li a {
@@ -37,7 +40,7 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Dropdown menu */
+
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -64,23 +67,39 @@ nav ul li a:hover {
     background-color: #f0f0f0;
 }
 
-	.content{
-		display:flex;
-		justify-content: space-around
-		
-		
-	}
-	.Cloud-content{
-		line-height:2;
-		
-	}
-	footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; 
 }
+
+.cloud-content {
+    max-width: 600px; 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+.image{ max-width: 500px;
+    height: auto;
+    padding-top: 100px;
+	border-radius: 10px;
+	 
+		    width: 100%;
+    margin: 20px auto;
+    display: block;
+    
+	
+	;}
