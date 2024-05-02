@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website development</title>
+    <style>
+      header {
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+        color: white;
+      }
+
+      nav ul {
+        list-style-type: none;
+        text-align: right;
+        padding-right: 100px;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      nav ul li:first-child {
+        margin-left: 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        display: block;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 5px;
+      }
+
+      .dropdown-menu li {
+        display: block;
+      }
+
+      .dropdown-menu li a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .dropdown-menu li a:hover {
+        background-color: #f0f0f0;
+      }
+
+      .flex-box {
+        padding: 5% 10% 5% 15%;
+      }
+
+      .img-title-mypar {
+        display: flex;
+      }
+
+      .title-my-par {
+        width: 500px;
+        margin-left: 10%;
+      }
+
+      .title,
+      .title2 {
+        font-size: 50px;
+      }
+
+      .my-par {
+        font-size: 30px;
+      }
+
+      hr {
+        color: rgb(196, 195, 195);
+        width: 1700px;
+      }
+
+      /* ---------------------------- */
+      .bg-color {
+        background-color: rgb(236, 232, 232);
+      }
+      .my-paragraphs {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .my-par2 {
+        font-size: 22px;
+        width: 400px;
+        margin-left: -19%;
+      }
+
+      .title2,
+      .front-end-title {
+        margin-bottom: 4%;
+      }
+
+      /* ----------------------------- */
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 2%;
+      }
+
+      th {
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      td {
+        font-size: 30px;
+      }
+
+      /* ----------------------- */
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* -----------for medium screen---------- */
+      @media only screen and (max-width: 1300px) {
+        img {
+          width: 500px;
+          height: 500px;
+        }
+
+        .title,
+        .title2 {
+          font-size: 35px;
+        }
+
+        .my-par {
+          font-size: 24px;
+        }
+
+        .my-par2 {
+          font-size: 20px;
+          margin-left: -8%;
+          width: 230px;
+        }
+      }
+
+      /* -----------for small screen---------- */
+      @media only screen and (max-width: 1000px) {
+        body {
+          background-color: rgb(100, 177, 151);
+        }
+
+        .flex-box {
+          padding: 5% 10%;
+        }
+
+        img {
+          width: 600px;
+          height: 500px;
+        }
+
+        .img-title-mypar,
+        .my-paragraphs {
+          display: block;
+        }
+
+        .title,
+        .title2 {
+          font-size: 40px;
+        }
+
+        .title-my-par {
+          margin-top: 5%;
+          margin-left: 1%;
+          width: 660px;
+        }
+
+        .my-par {
+          font-size: 25px;
+        }
+
+        .my-par2 {
+          font-size: 20px;
+          margin-left: 1%;
+          width: 600px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Evolution and Impact of Webside Development in the IT Field</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+              <li><a href="AI-page.html">Artificial Intelligence</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="mobile_dev.html">Mobile Development</a></li>
+              <li><a href="CloudComputing.html">Cloud Computing</a></li>
+              <li><a href="Network.html">Networking</a></li>
+              <li><a href="cyberSecurity.html">Cyber Security</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="flex-box">
+      <div class="img-title-mypar">
+        <div class="web-img">
+          <img
+            src="./web-dev image.jpg"
+            class=""
+            alt="web deveopment picture"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="title-my-par">
+          <h1 class="title">What is Website development?</h1>
+          <p class="my-par">
+            Web development refers to the overall process of creating websites
+            or web applications, including the project’s design, layout, coding,
+            content creation, and functionality. It involves using a combination
+            of programming languages, tools, and frameworks to bring a website
+            or web application to life
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="flex-box bg-color">
+      <h1 class="title2">Types of Web Development</h1>
+      <div class="my-paragraphs">
+        <div class="about-frontend">
+          <p class="my-par2">
+            <b>Front-end Development..</b>Front-end (or client-side) is the side
+            of a website or software that you see and interact with as an
+            Internet user. When website information is transferred from a server
+            to a browser, front-end coding languages allow the website to
+            function without having to continually “communicate” with the
+            Internet.
+
+            <br />
+
+            Front-end code allows users to interact with a website and play
+            videos, expand or minimize images, highlight text, and more. Web
+            developers who work on front-end coding work on client-side
+            development.
+          </p>
+        </div>
+        <div class="about-backend">
+          <p class="my-par2">
+            <b>Back-end Development..</b>
+            The back-end (or server-side) is the side that you don’t see when
+            you use the Internet. It’s the digital infrastructure, and to
+            non-developers, it looks like a bunch of numbers, letters, and
+            symbols.
+
+            <br />
+
+            There are more back-end coding languages than front-end languages.
+            That’s because browsers — at the front-end — only understand HTML,
+            CSS, and JavaScript, but a server — at the back-end — can be
+            configured to understand pretty much any language.
+          </p>
+        </div>
+
+        <div class="about-full-stack">
+          <p class="my-par2">
+            <b>Full stack Development..</b>
+            Full stack developers work in both the front-end and back-end sides
+            of a website. They can create a website, application, or software
+            program from start to finish. “Stack” refers to the different
+            technologies that handle different functionalities on the same
+            website, like the server, interface, etc.
+            <br />
+            Because full-stack developers require years in the field to build
+            the necessary experience, this role is often sought after by
+            companies looking to build or update their websites.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="flex-box">
+      <table style="width: 100%">
+        <tr>
+          <th>Front-End languages</th>
+          <th>Back-End languages</th>
+          <th>Security practices</th>
+        </tr>
+        <tr>
+          <td>HTML(Hyper Text Markup Language)</td>
+          <td>Python</td>
+          <td>Common Threads</td>
+        </tr>
+        <tr>
+          <td>Css(Cascading style)</td>
+          <td>PHP</td>
+          <td>Secure coding practices</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>Ruby</td>
+          <td>Authentication</td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>Java</td>
+          <td>Authorization</td>
+        </tr>
+        <tr>
+          <td>jQuery</td>
+          <td>C#</td>
+        </tr>
+      </table>
+    </div>
+    <hr />
+
+    <footer>
+      <p>&copy; 2024 Mobile-Development. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
