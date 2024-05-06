@@ -8,126 +8,200 @@
     <style>/* CSS styles for the networking HTML page */
 
         /* CSS styles for the networking HTML page */
+         <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
+        header {
     background-color: #333;
-    color: #fff;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
+	color:white;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    text-align: right; 
+	padding-right:100px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-left: 20px; 
+}
+
+nav ul li:first-child {
+    margin-left: 0; 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
-}
-
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 15px;
+    display: block;
 }
 
-        </style>
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            
+            text-shadow: #343a40;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+         .what-is-networking{
+             text-shadow: #333;
+        }
+        .image-container {
+    width: 300px; 
+    height: 200px; 
+    padding-left: 40%;
+    margin-top: 20px; 
+   
+}
+
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+    </style> 
+
 </head>
 <body>
     <header>
         <h1>Evolution and Impact of Mobile Development in the IT Field</h1>
-        <nav>
+          <nav>
             <ul>
-                <li><a href="home.html">Home</a></li>
+                <li><a href="./home.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="#">Services</a>
+                    <a href="#">Topics</a>
                     <ul class="dropdown-menu">
-                        <li><a href="AI-page.html">Artificial Intelligence</a></li>
-                        <li><a href="web-dev.html">Web Development</a></li>
-                        <li><a href="mobile_dev.html">Mobile Development</a></li>
-                        <li><a href="CloudComputing.html">Cloud Computing</a></li>
-                        <li><a href="Network.html">Networking</a></li>
-                        <li><a href="#">Cyber Security</a></li>
+                        <li><a href="./AI-page.html">Artificial intelligence</a></li>
+                        <li><a href="./web-dev.html">Web Development</a></li>
+                        <li><a href="./mobile_dev.html">Mobile Development</a></li>
+                        <li><a href="./CloudComputing.html">Cloud Computing</a></li>
+                        <li><a href="./Network.html">Networking</a></li>
+                        <li><a href="./cyberSecurity.html">Cyber Security</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
+      
 
-    <nav>
-        <ul>
-            <li><a href="#what-is-networking">What is Networking?</a></li>
-            <li><a href="#types-of-networks">Types of Networks</a></li>
-            <li><a href="#network-components">Network Components</a></li>
-            <li><a href="#network-security">Network Security</a></li>
-        </ul>
-    </nav>
     <section id="what-is-networking">
+        <di class="image-container"><img src="./networking.jpeg" alt="Networking picture"></di>
+        <h1>Networking Basics</h1>
         <h2>What is Networking?</h2>
-        <p>Networking refers to the practice of connecting computers and other devices together to share resources and communicate with each other.</p>
+        <p>Networking refers to the practice of 
+            connecting computers 
+            and other devices together to share 
+            resources and communicate with each other.</p>
     </section>
     <section id="types-of-networks">
         <h2>Types of Networks</h2>
         <p>There are various types of networks, including:</p>
-        <ul>
-            <li>LAN (Local Area Network)</li>
-            <li>WAN (Wide Area Network)</li>
-            <li>MAN (Metropolitan Area Network)</li>
-            <li>Wireless Networks</li>
-            <li>Internet</li>
-            <li>Intranet</li>
-            <li>Extranet</li>
-        </ul>
+        <p>LAN (Local Area Network)</p>
+        <p>WAN (Wide Area Network)</p>
+        <p>MAN (Metropolitan Area Network)</p>
+        <p>Wireless Networks</p>
+        <p>Internet</p>
+        <p>Intranet</p>
+        <p>Extranet</p>
     </section>
     <section id="network-components">
         <h2>Network Components</h2>
         <p>Key components of a network include:</p>
-        <ul>
-            <li>Routers</li>
-            <li>Switches</li>
-            <li>Modems</li>
-            <li>Firewalls</li>
-            <li>Network Cables</li>
-            <li>Wireless Access Points</li>
-            <li>Network Interface Cards (NICs)</li>
-        </ul>
+        <p>Routers</p>
+        <p>Switches</p>
+        <p>Modems</p>
+        <p>Firewalls</p>
+        <p>Network Cables</p>
+        <p>Wireless Access Points</p>
+        <p>Network Interface Cards (NICs)</p>
     </section>
     <section id="network-security">
         <h2>Network Security</h2>
         <p>Ensuring the security of a network is crucial. Common security measures include:</p>
-        <ul>
-            <li>Firewalls</li>
-            <li>Encryption</li>
-            <li>Antivirus Software</li>
-            <li>Access Control</li>
-            <li>Intrusion Detection Systems (IDS)</li>
-            <li>Virtual Private Networks (VPNs)</li>
-        </ul>
+        <p>Firewalls</p>
+        <p>Encryption</p>
+        <p>Antivirus Software</p>
+        <p>Access Control</p>
+        <p>Intrusion Detection Systems (IDS)</p>
+        <p>Virtual Private Networks (VPNs)</p>
     </section>
     <footer>
-        <p>&copy; 2024 Networking Basics</p>
+        <p>&copy; 2024 Networking Technologies. All rights reserved.</p>
     </footer>
+    
 </body>
 </html>
